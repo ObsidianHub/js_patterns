@@ -1,4 +1,3 @@
-
 // Observer pattern
 class EventObserver {
     constructor() {
