@@ -24,8 +24,23 @@ class MyIterator {
     }
 }
 
+function* generator(collection) {
+    let index = 0
+
+    while(index < collection.length) {
+        yield collection[index++]
+    }
+}
+
 const iterator = new MyIterator(['This', 'is', 'iterator'])
+
+const gen = generator(['This', 'is', 'iterator'])
 
 for (const val of iterator) {
     console.log('Value: ', val)
 }
+
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
