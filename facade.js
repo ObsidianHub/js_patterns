@@ -40,3 +40,4 @@ class ComplaintRegistry {
 
 const registry = new ComplaintRegistry();
 console.log(registry.register('Denny', 'service', 'undefined'))
+console.log(registry.register('Katya', 'product', 'got an error'))
